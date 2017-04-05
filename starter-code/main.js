@@ -47,7 +47,10 @@ for (var i = 0; i < ages.length; i++) {
 	Hint: What would the conditional for your for-loop look like?
 */
 
-younger.reverse();
+for (var i = younger.length - 1; i >= 0; i--) {
+    console.log(younger[i]);
+}
+
 
 /*
 	Part 4: Now that you've finished the first 3 parts using a for-loop, repeat the same exercises
@@ -71,7 +74,11 @@ while (i < ages.length) {
     console.log(younger);
 }
 
-younger.reverse();
+var i = younger.length - 1;
+while (i >= 0) {
+    i--;
+    console.log(younger[i]);
+}
 
 /*
 	Part 5: Create a function, getDayOfWeek, that will tell you what day of the week it is.
@@ -84,32 +91,31 @@ younger.reverse();
 function getDayOfWeek(dayNum) {
     switch (dayNum) {
         case 1:
-            return "Sunday";
+            day = "Sunday";
             break;
         case 2:
-            return "Monday";
+            day = "Monday";
             break;
         case 3:
-            return "Tuesday";
+            day = "Tuesday";
             break;
         case 4:
-            return "Wednesday";
+            day = "Wednesday";
             break;
         case 5:
-            return "Thursday";
+            day = "Thursday";
             break;
         case 6:
-            return "Friday";
+            day = "Friday";
             break;
-        case 7:
-            return "Saturday";
-            break;
+        case 7
+        day = "Saturday";
+        break;
         default:
-
-            return "Please enter a valid day of the week.";
+            day = "Please enter a valid day of the week;
             break;
     }
-
+    return day;
 }
 console.log(getDayOfWeek());
 
